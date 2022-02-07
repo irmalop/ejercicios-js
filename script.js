@@ -59,3 +59,12 @@ const admitirPaso = (persona) => {
 ejercicio2.forEach((persona) =>{
     admitirPaso(persona);
 });
+
+let fibo = [0,1];
+function fib(n){
+  for( let i = 2; i < n; i++) {
+    fibo[i] = fibo[i-2] + fibo[i-1];
+  }
+  return fibo;
+  }
+console.log(fib(50))
